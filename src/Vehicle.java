@@ -4,7 +4,7 @@ public class Vehicle {
     int mpg; // fuel consumption in miles per gallon
 
     // Method for displaying trip distance
-    void range(){
-        System.out.println("Range in miles on a full tank: " + fuelCap * mpg);
+    int range(){
+       return fuelCap * mpg;
     }
 }

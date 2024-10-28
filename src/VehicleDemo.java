@@ -9,19 +9,21 @@ public class VehicleDemo {
         minivan.fuelCap = 16;
         minivan.mpg = 21;
 
+        range1 = minivan.range(); // Calculating the range of minivan on a full tank
+
         //Assigning values to fields in sport-car
         sportCar.passengers = 2;
         sportCar.fuelCap = 14;
         sportCar.mpg = 12;
 
-        System.out.println("The minivan can carry " + minivan.passengers +
-                " passengers");
+        range2 = sportCar.range(); // Calculating the range of sport-car on a full tank
 
-        minivan.range(); // Displays the range of minivan on a full tank
+        System.out.println("The minivan can carry " + minivan.passengers +
+                " passengers for " + range1 + " miles on a full tank");
 
         System.out.println("The sport-car can carry " + sportCar.passengers +
-                " passengers");
+                " passengers for " + range2 + " miles on a full tank");
 
-        sportCar.range(); // Displays the range of sport-car on a full tank
+
     }
 }
